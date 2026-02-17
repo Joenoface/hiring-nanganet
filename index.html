@@ -3,79 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Opportunity – Delivery App Project</title>
+    <title>Developer Opportunity – Nanga Technologies</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        :root {
+            --primary: #0A66C2;
+            --secondary: #00A86B;
+            --bg: #f4f6f8;
+            --text: #1e293b;
+        }
+
+        * {
             margin: 0;
-            background: #f4f6f8;
-            color: #333;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
         }
 
         header {
-            background: #0a66c2;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 30px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 28px;
+            font-size: 34px;
+            font-weight: 700;
         }
 
         header p {
-            margin-top: 10px;
-            font-size: 16px;
+            margin-top: 12px;
+            font-size: 17px;
+            opacity: 0.95;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .card {
             background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            padding: 28px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
         }
 
         h2 {
-            color: #0a66c2;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 15px;
+            color: var(--secondary);
         }
 
         ul {
             line-height: 1.8;
+            padding-left: 18px;
+        }
+
+        p {
+            line-height: 1.7;
         }
 
         .btn {
             display: inline-block;
             margin: 10px 10px 0 0;
-            padding: 12px 18px;
+            padding: 12px 22px;
             border-radius: 6px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: all 0.25s ease;
         }
 
         .email-btn {
-            background: #0a66c2;
+            background: var(--primary);
             color: white;
         }
 
+        .email-btn:hover {
+            background: #084a91;
+        }
+
         .whatsapp-btn {
-            background: #25D366;
+            background: var(--secondary);
             color: white;
+        }
+
+        .whatsapp-btn:hover {
+            background: #008a59;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             font-size: 14px;
-            color: #666;
+            color: #64748b;
         }
     </style>
 </head>
@@ -83,93 +124,95 @@
 <body>
 
 <header>
-    <h1>🚀 Developer Opportunity</h1>
-    <p>Enterprise Delivery App Project (Flutter + Node.js + MySQL)</p>
+    <h1>Developer Opportunity</h1>
+    <p>Enterprise Delivery App Project – Flutter, Node.js and MySQL</p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>📌 Project Overview</h2>
+        <h2>Project Overview</h2>
         <p>
-            We are building a <strong>production-grade Android delivery platform</strong> for a dining business
-            with <strong>3 outlets under a centralized administration system</strong>.
+            We are building a production-grade Android delivery platform for a dining business
+            with three outlets under a centralized administration system.
         </p>
     </div>
 
     <div class="card">
-        <h2>🔧 Tech Stack</h2>
+        <h2>Tech Stack</h2>
         <ul>
             <li>Flutter (Android)</li>
             <li>Node.js (Express)</li>
             <li>MySQL Database</li>
-            <li>Docker + Cloud Hosting</li>
+            <li>Docker and Cloud Hosting</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>👨‍💻 Roles Available</h2>
+        <h2>Roles Available</h2>
 
-        <h3>1. Flutter Developer</h3>
+        <h3>Flutter Developer</h3>
         <ul>
-            <li>Customer ordering app</li>
-            <li>Driver delivery app</li>
-            <li>Real-time tracking UI</li>
-            <li>Payment integration (M-Pesa)</li>
+            <li>Customer ordering application</li>
+            <li>Driver delivery application</li>
+            <li>Real-time order tracking interface</li>
+            <li>Payment integration including M-Pesa</li>
         </ul>
 
-        <h3>2. Backend Developer (Node.js)</h3>
+        <h3>Backend Developer (Node.js)</h3>
         <ul>
             <li>REST API development</li>
-            <li>Authentication & user roles</li>
-            <li>Orders, delivery & payments</li>
-            <li>Real-time updates (Socket.io)</li>
+            <li>Authentication and user role management</li>
+            <li>Orders, delivery and payment systems</li>
+            <li>Real-time updates using Socket.io</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>🌟 Project Features</h2>
+        <h2>Project Features</h2>
         <ul>
-            <li>Multi-outlet system (scalable)</li>
+            <li>Multi-outlet system with centralized administration</li>
             <li>Real-time delivery tracking</li>
-            <li>Admin dashboard & analytics</li>
+            <li>Admin dashboard and analytics</li>
             <li>Driver management system</li>
-            <li>M-Pesa & card payment integration</li>
+            <li>M-Pesa and card payment integration</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>💰 Compensation</h2>
+        <h2>Compensation</h2>
         <ul>
             <li>Competitive project-based pay</li>
-            <li>Long-term contract opportunity</li>
-            <li>Potential maintenance retainer</li>
+            <li>Opportunity for long-term engagement</li>
+            <li>Potential maintenance and support contract</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>📍 Location</h2>
-        <p>Remote (Kenya-based developers preferred)</p>
+        <h2>Location</h2>
+        <p>Remote, with preference for developers based in Kenya for easier coordination.</p>
     </div>
 
     <div class="card" style="text-align:center;">
-        <h2>📩 Apply Now</h2>
-        <p>Send your <strong>portfolio, GitHub and role of interest</strong> directly to me.</p>
+        <h2>Apply</h2>
+        <p>Send your portfolio, GitHub and role of interest directly.</p>
 
         <a class="btn email-btn" href="mailto:josephkoinange717@gmail.com?subject=Developer Application – Delivery App">
-            📧 Apply via Email
+            Apply via Email
         </a>
 
         <a class="btn whatsapp-btn" href="https://wa.me/254110922897" target="_blank">
-            💬 Apply via WhatsApp
+            Apply via WhatsApp
         </a>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Delivery App Project | Built for scalable enterprise operations
+    © 2026 Nanga Technologies. All rights reserved.
 </footer>
 
 </body>
 </html>
+
+
